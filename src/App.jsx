@@ -1,13 +1,12 @@
-import { useState } from "react";
-import Header from "./layouts/header";
-import Navbar from "./layouts/navbar";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./routes";
 
 export default function App() {
-  const [open, setOpen] = useState(false);
   return (
     <>
-      <Header onOpenNav={() => setOpen(true)} />
-      <Navbar openNav={open} onCloseNav={() => setOpen(false)} />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </>
   );
 }
