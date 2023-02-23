@@ -33,6 +33,7 @@ export default function Navbar({ openNav, onCloseNav }) {
             return (
               <li key={link.name} className="pt-4">
                 <Link
+                  onClick={onCloseNav}
                   to={link.href}
                   className="hover:text-blue-900 text-sm uppercase tracking-widest font-medium pr-10"
                 >
