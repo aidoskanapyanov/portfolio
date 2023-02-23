@@ -30,7 +30,7 @@ export default function Navbar({ openNav, onCloseNav }) {
             ✕
           </button>
         </div>
-        <ul className="flex flex-col gap-y-4 divide-y mt-8">
+        <ul className="flex flex-col gap-y-4 divide-y pr-4 mt-8">
           {navLinks.map((link) => {
             return (
               <li key={link.name} className="pt-4">
