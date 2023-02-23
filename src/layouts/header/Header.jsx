@@ -1,6 +1,6 @@
 import HeaderLinks from "./NavbarLinks";
 
-function Header() {
+function Header({ onOpenNav }) {
   return (
     <>
       <header className="bg-white flex gap-x-4 sm:divide-x  items-center px-4 sm:py-4 py-2 shadow">
@@ -8,7 +8,9 @@ function Header() {
           Aidos Kanapyanov
         </h1>
         <HeaderLinks />
-        <button className="sm:hidden ml-auto">☰</button>
+        <button onClick={onOpenNav} className="sm:hidden ml-auto">
+          ☰
+        </button>
       </header>
     </>
   );
