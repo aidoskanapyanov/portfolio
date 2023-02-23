@@ -5,7 +5,9 @@ export default function PageHeader({ title, subtitle }) {
         <header className="text-center uppercase font-bold tracking-widest">
           {title}
         </header>
-        <p className="uppercase font-thin tracking-widest">{subtitle}</p>
+        <p className="text-center uppercase font-thin tracking-widest">
+          {subtitle}
+        </p>
       </div>
     </>
   );
