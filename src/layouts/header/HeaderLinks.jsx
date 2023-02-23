@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function HeaderLinks() {
   const navLinks = [
     {
-      name: "Home",
+      name: "Site",
       href: "/site",
     },
     {
