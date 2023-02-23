@@ -1,4 +1,4 @@
-import HeaderLinks from "./NavbarLinks";
+import HeaderLinks from "./HeaderLinks";
 
 function Header({ onOpenNav }) {
   return (
