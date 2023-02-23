@@ -2,15 +2,11 @@ export default function Navbar({ openNav, onCloseNav }) {
   const navLinks = [
     {
       name: "Aidos Kanapyanov",
-      href: "/",
-    },
-    {
-      name: "Home",
-      href: "/",
+      href: "/site",
     },
     {
       name: "About",
-      href: "/",
+      href: "/about",
     },
     {
       name: "Contact",
