@@ -1,4 +1,4 @@
-export default function NavbarLinks() {
+export default function HeaderLinks() {
   const navLinks = [
     {
       name: "Home",

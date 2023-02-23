@@ -1,4 +1,4 @@
-import Navbar from "./navbar";
+import HeaderLinks from "./NavbarLinks";
 
 function Header() {
   return (
@@ -7,7 +7,8 @@ function Header() {
         <h1 className="hover:text-blue-900 text-sm xs:grow uppercase tracking-widest font-bold">
           Aidos Kanapyanov
         </h1>
-        <Navbar />
+        <HeaderLinks />
+        <button className="sm:hidden ml-auto">☰</button>
       </header>
     </>
   );
