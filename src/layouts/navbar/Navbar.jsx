@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar({ openNav, onCloseNav }) {
   const navLinks = [
     {
-      name: "Aidos Kanapyanov",
+      name: "Site",
       href: "/site",
     },
     {
@@ -30,12 +32,12 @@ export default function Navbar({ openNav, onCloseNav }) {
           {navLinks.map((link) => {
             return (
               <li key={link.name} className="pt-4">
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="hover:text-blue-900 text-sm uppercase tracking-widest font-medium pr-10"
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             );
           })}

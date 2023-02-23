@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+
 export default function HeaderLinks() {
   const navLinks = [
     {
       name: "Home",
-      href: "/",
+      href: "/site",
     },
     {
       name: "About",
-      href: "/",
+      href: "/about",
     },
     {
       name: "Contact",
@@ -20,12 +22,12 @@ export default function HeaderLinks() {
         {navLinks.map((link) => {
           return (
             <li key={link.name} className="pl-4">
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 className="hover:text-blue-900 text-sm uppercase tracking-widest"
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           );
         })}
