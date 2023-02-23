@@ -3,7 +3,7 @@ import Page from "../components/page";
 export default function About() {
   return (
     <>
-      <Page title="About" subtitle="(in about 1038 words)">
+      <Page title="About me" subtitle="(in about 1038 words)">
         <h1 className="mt-10 mb-4 uppercase font-bold tracking-widest">
           Intro
         </h1>
