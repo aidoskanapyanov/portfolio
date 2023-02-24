@@ -9,7 +9,7 @@ export default function BaseLayout() {
     <>
       <Header onOpenNav={() => setOpen(true)} />
       <Navbar openNav={open} onCloseNav={() => setOpen(false)} />
-      <article className="bg-white shadow my-10">
+      <article className="bg-white shadow my-10 md:m-10">
         <Outlet />
       </article>
     </>
