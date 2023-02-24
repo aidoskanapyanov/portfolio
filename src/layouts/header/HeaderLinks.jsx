@@ -17,7 +17,7 @@ export default function HeaderLinks() {
   ];
 
   return (
-    <div className="hidden sm:block">
+    <div className="hidden md:block">
       <ul className="flex gap-x-4 divide-x">
         {navLinks.map((link) => {
           return (
