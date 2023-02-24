@@ -5,7 +5,7 @@ import Router from "./routes";
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio">
         <ScrollToTop />
         <Router />
       </BrowserRouter>
