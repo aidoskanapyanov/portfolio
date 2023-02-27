@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
+import ScrollToTopBtn from "../../components/ScrollToTopBtn";
 import Header from "./header";
 import Navbar from "./navbar";
 import Sidebar from "./sidebar/Sidebar";
@@ -16,6 +17,7 @@ export default function BaseLayout() {
         </article>
         <Sidebar />
       </div>
+      <ScrollToTopBtn />
     </>
   );
 }
