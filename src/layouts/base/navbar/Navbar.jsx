@@ -35,7 +35,7 @@ export default function Navbar({ openNav, onCloseNav }) {
                 <Link
                   onClick={onCloseNav}
                   to={link.href}
-                  className="hover:text-blue-900 text-sm uppercase tracking-widest font-medium pr-10"
+                  className="transition ease-in duration-200 hover:text-blue-900 text-sm uppercase tracking-widest font-medium pr-10"
                 >
                   {link.name}
                 </Link>

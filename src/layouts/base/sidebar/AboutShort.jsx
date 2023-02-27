@@ -12,7 +12,7 @@ export default function AboutShort() {
       </p>
       <Link
         to="/about"
-        className="p-4 text-xs font-medium uppercase border-2 tracking-widest hover:bg-white"
+        className="transition ease-in duration-200 p-4 text-xs font-medium uppercase border tracking-widest hover:text-blue-900 hover:border-blue-900"
       >
         Learn more
       </Link>

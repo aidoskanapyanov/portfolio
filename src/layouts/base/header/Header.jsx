@@ -5,10 +5,10 @@ function Header({ onOpenNav }) {
   return (
     <>
       <header className="bg-white flex gap-x-4 md:divide-x  items-center px-4 md:py-4 py-2 shadow">
-        <h1 className="hover:text-blue-900 text-sm xs:grow uppercase tracking-widest font-bold">
+        <h1 className="transition ease-in duration-200 hover:text-blue-900 text-sm xs:grow uppercase tracking-widest font-bold">
           <Link
             to="/about"
-            className="hover:text-blue-900 text-sm uppercase tracking-widest"
+            className="transition ease-in duration-200 hover:text-blue-900 text-sm uppercase tracking-widest"
           >
             Aidos Kanapyanov
           </Link>

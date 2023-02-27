@@ -24,7 +24,7 @@ export default function HeaderLinks() {
             <li key={link.name} className="pl-4">
               <Link
                 to={link.href}
-                className="hover:text-blue-900 text-sm uppercase tracking-widest"
+                className="transition ease-in duration-200 hover:text-blue-900 text-sm uppercase tracking-widest"
               >
                 {link.name}
               </Link>
