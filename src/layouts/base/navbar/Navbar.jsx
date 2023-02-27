@@ -1,6 +1,11 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
+import useOnClickOutside from "../../../hooks/useOnClickOutside";
 
 export default function Navbar({ openNav, onCloseNav }) {
+  const ref = useRef();
+  useOnClickOutside(ref, onCloseNav);
+
   const navLinks = [
     {
       name: "Site",
@@ -19,6 +24,7 @@ export default function Navbar({ openNav, onCloseNav }) {
   return (
     <>
       <div
+        ref={ref}
         className={`${
           openNav ? "" : "translate-x-full"
         } transition ease-in duration-200 shadow dark:border-l-gray-500 dark:border-l fixed right-0 top-0 h-screen z-[999] bg-white dark:bg-slate-800 dark:text-white pl-8 pr-4 py-2`}
