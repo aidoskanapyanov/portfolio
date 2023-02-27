@@ -1,5 +1,5 @@
 import { Navigate, useRoutes } from "react-router-dom";
-import BaseLayout from "../layouts/BaseLayout";
+import BaseLayout from "../layouts/base/";
 import About from "../pages/About";
 import AboutSite from "../pages/AboutSite";
 

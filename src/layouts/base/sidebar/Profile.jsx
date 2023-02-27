@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import avatarUrl from "../../assets/images/avatar.jfif";
+import avatarUrl from "../../../assets/images/avatar.jfif";
 
 export default function Profile() {
   return (
