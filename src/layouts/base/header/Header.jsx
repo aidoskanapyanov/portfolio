@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import HeaderLinks from "./HeaderLinks";
+import Switcher from "../../../components/Switcher";
 
 function Header({ onOpenNav }) {
   return (
@@ -14,7 +15,8 @@ function Header({ onOpenNav }) {
           </Link>
         </h1>
         <HeaderLinks />
-        <button onClick={onOpenNav} className="md:hidden ml-auto">
+        <Switcher />
+        <button onClick={onOpenNav} className="md:hidden">
           ☰
         </button>
       </header>
