@@ -15,12 +15,16 @@ export default function Switcher() {
 
   return (
     <>
-      <div className="flex items-center pl-4 md:ml-0 ml-auto">
+      <div className="relative flex items-center pl-4 md:ml-0 ml-auto">
         <DarkModeSwitch
           checked={darkSide}
           onChange={toggleDarkMode}
           size={16}
           moonColor="#FFD700"
+          sunColor="#facc15"
+          className={
+            darkSide ? null : "animate-[spin_10s_ease-in-out_infinite]"
+          }
         />
       </div>
     </>
