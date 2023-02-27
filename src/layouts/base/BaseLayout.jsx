@@ -10,8 +10,8 @@ export default function BaseLayout() {
     <>
       <Header onOpenNav={() => setOpen(true)} />
       <Navbar openNav={open} onCloseNav={() => setOpen(false)} />
-      <div className="flex xl:flex-row-reverse flex-col divide-y">
-        <article className="lg:basis-3/4 basis-full bg-white shadow my-10 md:m-10">
+      <div className="flex xl:flex-row-reverse flex-col divide-y xl:divide-y-0">
+        <article className="lg:basis-3/4 basis-full bg-white dark:bg-slate-800 dark:text-white shadow my-10 md:m-10">
           <Outlet />
         </article>
         <Sidebar />

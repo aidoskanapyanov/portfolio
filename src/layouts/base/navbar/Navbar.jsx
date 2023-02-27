@@ -21,7 +21,7 @@ export default function Navbar({ openNav, onCloseNav }) {
       <div
         className={`${
           openNav ? "" : "translate-x-full"
-        } transition ease-in duration-200 fixed right-0 top-0 h-screen z-[999] bg-white pl-8 pr-4 py-2`}
+        } transition ease-in duration-200 shadow dark:border-l-gray-500 dark:border-l fixed right-0 top-0 h-screen z-[999] bg-white dark:bg-slate-800 dark:text-white pl-8 pr-4 py-2`}
       >
         <div className="flex justify-end">
           <button className="block right-0" onClick={onCloseNav}>
@@ -35,7 +35,7 @@ export default function Navbar({ openNav, onCloseNav }) {
                 <Link
                   onClick={onCloseNav}
                   to={link.href}
-                  className="transition ease-in duration-200 hover:text-blue-900 text-sm uppercase tracking-widest font-medium pr-10"
+                  className="transition ease-in duration-200 hover:text-blue-900 dark:hover:text-blue-300 text-sm uppercase tracking-widest font-medium pr-10"
                 >
                   {link.name}
                 </Link>
