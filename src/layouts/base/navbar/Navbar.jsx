@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import useOnClickOutside from "../../../hooks/useOnClickOutside";
+import Overlay from "./Overlay";
 
 export default function Navbar({ openNav, onCloseNav }) {
   const ref = useRef();
@@ -23,6 +24,7 @@ export default function Navbar({ openNav, onCloseNav }) {
 
   return (
     <>
+      <Overlay openNav={openNav} />
       <div
         ref={ref}
         className={`${
