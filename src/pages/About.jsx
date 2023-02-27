@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import Page from "../components/page";
 
 export default function About() {
   return (
     <>
+      <Helmet>
+        <title>About | Aidos Kanapyanov</title>
+      </Helmet>
       <Page title="About me" subtitle="(in about 1038 words)">
         <h1 className="mt-10 mb-4 uppercase font-bold tracking-widest">
           Intro

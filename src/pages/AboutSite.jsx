@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import Page from "../components/page";
 
 export default function About() {
   return (
     <>
+      <Helmet>
+        <title>Site | Aidos Kanapyanov</title>
+      </Helmet>
       <Page
         title="About this site"
         subtitle="a beautiful, responsive, statically-generated, react application written with modern javascript."
