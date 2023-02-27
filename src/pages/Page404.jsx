@@ -8,8 +8,8 @@ export default function Page404() {
       <Helmet>
         <title>404 | Aidos Kanapyanov</title>
       </Helmet>
-      <div className="dark:text-white flex flex-col items-center justify-center min-h-screen pb-52">
-        <img src={img404} alt="" className="max-h-80" />
+      <div className="dark:text-white flex flex-col items-center justify-center mt-10">
+        <img src={img404} alt="" className="max-h-64" />
         <h1 className="text-6xl font-bold">404</h1>
         <p className="text-2xl font-medium">Page not found.</p>
         <p className="mt-8">
