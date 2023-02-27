@@ -20,8 +20,8 @@ export default function Navbar({ openNav, onCloseNav }) {
     <>
       <div
         className={`${
-          openNav ? "block" : "hidden"
-        } fixed right-0 top-0 h-screen z-[999] bg-white pl-8 pr-4 py-2`}
+          openNav ? "" : "translate-x-full"
+        } transition ease-in duration-200 fixed right-0 top-0 h-screen z-[999] bg-white pl-8 pr-4 py-2`}
       >
         <div className="flex justify-end">
           <button className="block right-0" onClick={onCloseNav}>
