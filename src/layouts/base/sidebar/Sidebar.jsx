@@ -4,7 +4,7 @@ import Socials from "./Socials";
 
 export default function Sidebar() {
   return (
-    <div className="flex flex-col lg:basis-1/4 basis-full divide-y-2 mx-10 py-10">
+    <div className="dark:text-white flex flex-col lg:basis-1/4 basis-full divide-y-2 mx-10 py-10">
       <Profile />
       <AboutShort />
       <Socials />
