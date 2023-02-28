@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import img404 from "../assets/images/404.svg";
+import { ReactComponent as Img404 } from "../assets/images/404.svg";
 
 export default function Page404() {
   return (
@@ -9,7 +9,7 @@ export default function Page404() {
         <title>404 | Aidos Kanapyanov</title>
       </Helmet>
       <div className="dark:text-white flex flex-col items-center justify-center mt-10">
-        <img src={img404} alt="" className="max-h-64" />
+        <Img404 className="max-h-64" />
         <h1 className="text-6xl font-bold">404</h1>
         <p className="text-2xl font-medium">Page not found.</p>
         <p className="mt-8">
