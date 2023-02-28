@@ -4,7 +4,7 @@ import Switcher from "../../../components/Switcher";
 import useHideHeader from "../../../hooks/useHideHeader";
 
 function Header({ onOpenNav }) {
-  const visible = useHideHeader();
+  const [visible] = useHideHeader();
 
   return (
     <>
