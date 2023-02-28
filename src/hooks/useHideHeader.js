@@ -1,24 +1,27 @@
 import { useEffect, useState } from "react";
 
 export default function useHideHeader() {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
-
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-
-    if (currentScrollPos > prevScrollPos && prevScrollPos > 200) {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
-
-    setPrevScrollPos(currentScrollPos);
-  };
+  const [scrollVisible, setScrollVisible] = useState(true);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
-  return [visible, setVisible];
+    let lastScrollY = window.pageYOffset;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      const visible = scrollY <= lastScrollY;
+      if (
+        visible !== scrollVisible &&
+        (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)
+      ) {
+        setScrollVisible(visible);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
+    };
+  }, [scrollVisible]);
+
+  return scrollVisible;
 }
